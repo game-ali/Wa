@@ -1,0 +1,351 @@
+body {
+  background: repeating-linear-gradient(
+    to top,
+    forestgreen 0px,
+    forestgreen 5px,
+    seagreen 5px,
+    seagreen 10px,
+    darkgreen 10px,
+    darkgreen 15px
+  );
+  background-size: 100% 15px; /* Match the gradient cycle height */
+  animation: cycleStripes 1s linear infinite;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes cycleStripes {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 15px; }
+}
+.form_container{
+	background-color: yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	height: 80%;
+	margin-top: 5%;
+	display: none;
+
+
+}
+form{
+	display: flex;
+	flex-direction: column;
+
+}
+ input{
+	padding: 2% 5% 7%;
+	border-radius: 10px;
+}
+.buttonForm{
+	height:5vh ;
+	width: 5vw;
+	background-color: greenyellow;
+	border-radius: 10px;
+	font-size: 1rem;
+
+}
+.buttonForm:hover{
+	height: 8vh;
+	width: 11.5vw;
+	background-color: forestgreen;
+	border-radius: 10px;
+	color: white;
+	font-size: 2.5rem;
+}
+input:hover{
+	background-color: greenyellow;
+	height: 5vh;
+	width: 20vw;
+}
+
+
+.main_box{
+	width: 100%;
+	height: 90vh;
+	background: yellow;
+	margin-top: 5%;
+	border: 2px thin black;
+	border-radius: 10px;
+	padding: auto;
+	margin: 2px 2px 2px;
+	
+
+
+}
+#mainb_box{
+	display:;
+}
+.C_N_B{
+background:lightgreen;
+border: 1px solid green;
+width:80%;
+height: 10vh;
+border-radius: 10px;
+padding: auto;
+margin: 2px 2px 2px;
+text-align: center;
+}
+.C_N_B_P_B{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background:;
+	height: 10vh;
+	border-radius: 10px;
+	padding: auto;
+	margin: 2px 2px 2px;
+	
+
+
+}
+.P_B{
+	width: 20%;
+	height: 20vh;
+	background: whitesmoke;
+	border-radius: 10px;
+	border: 5px solid green;
+	padding: auto;
+	margin: 2px 2px 2px;
+	margin-top: 2px;
+	margin-right: 4px;
+
+
+}
+.D_B{
+	background:;
+border: 2px solid green;
+width:75%;
+height: 10vh;
+border-radius: 10px;
+margin-top: 10px;
+margin-left: 10px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+overflow-x: auto;       /* Enables horizontal scrolling */
+  overflow-y: hidden;     /* Prevents vertical scroll */
+  white-space: nowrap;    /* Keeps content in a single line */
+
+}
+.OP_B{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	background:;
+	gap: 10px;
+	margin-left: 1%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+
+}
+.N_B{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	margin-left: 1%;
+
+}
+.D_OP_B{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	margin-left: 1%;
+	margin-top: 10px;
+
+}
+button{
+	height: 12.5vh;
+	width: 9vw;
+	background-color: green;
+	border-radius: 10px;
+	color: black;
+	font-size: 4rem;
+}
+button:hover{
+	height: 12vh;
+	width: 8vw;
+	background-color: greenyellow;
+	border-radius: 10px;
+	color: white;
+
+}
+@media screen and (max-width: 914px) {
+	body{
+	background: repeating-linear-gradient(
+  to top,
+  forestgreen 0px,
+  forestgreen 5px,
+  seagreen 5px,
+  seagreen 10px,
+  darkgreen 10px,
+  darkgreen 15px
+);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	animation: sway 3s ease-in-out infinite;
+	flex-direction: column;
+	height: 100%;
+
+}
+@keyframes sway {
+
+	0%{background-position:0 0; }
+	50%{background-position: 5px 0;}
+	100%{background-position: 0 0;}
+}
+.main_box{
+	width: 100%;
+	height: 90vh;
+	background: yellow;
+	margin-top: 5%;
+	border: 2px thin black;
+	border-radius: 10px;
+	padding: auto;
+	margin: ;
+	display:;
+	
+
+}
+.C_N_B{
+background:lightgreen;
+border: 7px thick green;
+width:75%;
+height: 10vh;
+border-radius: 10px;
+padding: auto;
+margin: 2px 2px 2px;
+text-align: center;
+
+}
+.C_N_B_P_B{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background:;
+	height: 10vh;
+	border-radius: 10px;
+	padding: auto;
+	margin: 2px 2px 2px;
+	
+
+
+}
+.P_B{
+	width: 20%;
+	height: 20vh;
+	background: whitesmoke;
+	border-radius: 10px;
+	border: 3px solid green;
+	padding: auto;
+	margin: 2px 2px 2px;
+	margin-top: 10px;
+
+
+
+}
+.D_B{
+	background:;
+border: 7px thick green;
+width:70%;
+height: 10vh;
+border-radius: 10px;
+margin-top: 11px;
+
+}
+.OP_B{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	background:;
+	gap: 10px;
+	margin-left: 3%;
+	margin-bottom: 10px;
+	margin-top: 11px;
+	font-size: 1.5rem;
+
+
+}
+.N_B{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	margin-left: 3%;
+
+}
+.D_OP_B{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	margin-left: 3%;
+	margin-top: 11px;
+
+}
+button{
+	height: 11.5vh;
+	width: 20vw;
+	background-color: green;
+	border-radius: 10px;
+	font-size: 2rem;
+}
+button:hover{
+	height: 11vh;
+	width: 14.5vw;
+	background-color: greenyellow;
+	border-radius: 10px;
+	color: white;
+
+}
+/* ---------------------form container----------------- */
+.form_container{
+	background-color: yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	height: 75vh;
+	margin-top: 5%;
+	padding: auto;
+	border-radius: 10px;
+display: none;
+
+}
+.mainb_box{
+
+}
+form{
+	display: flex;
+	flex-direction: column;
+
+}
+ input{
+	padding: 2% 5% 7%;
+	border-radius: 10px;
+}
+.buttonForm{
+	height:5vh ;
+	width: 20vw;
+	background-color: greenyellow;
+	border-radius: 10px;
+	font-size: 1rem;
+
+}
+.buttonForm:hover{
+	height: 8vh;
+	width: 35vw;
+	background-color: forestgreen;
+	border-radius: 10px;
+	color: white;
+	font-size: 2.5rem;
+}
+input:hover{
+	background-color: greenyellow;
+	height: 5vh;
+	width: 70%;
+}
+
+}
