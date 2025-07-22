@@ -200,7 +200,7 @@ button:hover{
 	100%{background-position: 0 0;}
 }
 .main_box{
-	width: 100%;
+	width: 100vw;
 	height: 90vh;
 	background: yellow;
 	margin-top: 5%;
