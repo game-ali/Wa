@@ -15,7 +15,7 @@ function speak(text) {
 function handleEqualsClick() {
   try {
     const result = eval(enterInput).toString();
-    speak(` ahzaananin ${result} ,bagrca`);
+    speak(` ahzaananin ${result} ,samunu zaah calculator`);
     enterInput = result;
   } catch {
     enterInput = "";
@@ -73,12 +73,14 @@ buttons.forEach(btn =>{
   //openCal.style.display = "";
   //F_C.style.display = "none";
 //});
-document.addEventListener('DOMContentLoaded', () => {
+const soundBtn= document.getElementById("D_fix");
+soundBtn.addEventListener('click', () => {
 	const welMessage= "samunu zaah calculator"
 	  const utterance = new SpeechSynthesisUtterance(welMessage);
-      utterance.lang = "en-US";
+      utterance.lang = "en-IN";
       utterance.rate = 1;
       speechSynthesis.speak(utterance);
+      soundBtn.style.textAlign= "center";
 
 	// body...
 })
