@@ -8,7 +8,7 @@ let enterInput= "";
 // Function to speak the current input
 function speak(text) {
   const utterance = new SpeechSynthesisUtterance(text);
-   utterance.lang = "en-US";
+   utterance.lang = "en-IN";
   speechSynthesis.speak(utterance);
 
 }
@@ -76,7 +76,7 @@ buttons.forEach(btn =>{
 document.addEventListener('DOMContentLoaded', () => {
 	const welMessage= "samunu zaah calculator"
 	  const utterance = new SpeechSynthesisUtterance(welMessage);
-      utterance.lang = "en-IN";
+      utterance.lang = "en-US";
       utterance.rate = 1;
       speechSynthesis.speak(utterance);
 
